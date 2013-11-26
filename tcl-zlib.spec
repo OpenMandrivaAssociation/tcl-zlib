@@ -3,7 +3,7 @@
 Summary:	Zlib support for Tcl
 Name:		tcl-%{oname}
 Version:	2.0.1
-Release:	0.svn40.1
+Release:	0.svn40.2
 Group:		System/Libraries
 License:	MIT
 Url:		http://svn.scheffers.net/
@@ -54,7 +54,7 @@ make DESTDIR=%{buildroot} install-binaries install-libraries
 
 install -d %{buildroot}%{tcl_sitearch}
 mv %{buildroot}%{_libdir}/%{oname}%{version} %{buildroot}%{tcl_sitearch}/%{oname}%{version}
-ln -s tcl%{tcl_version}/%{name}%{version}/lib%{name}%{version}.so %{buildroot}%{_libdir}/lib%{name}%{version}.so
+ln -s tcl%{tcl_version}/%{oname}%{version}/lib%{oname}%{version}.so %{buildroot}%{_libdir}/lib%{oname}%{version}.so
 
 rm -rf %{buildroot}%{tcl_sitearch}/%{oname}%{version}/zlib.c
 chmod -x %{buildroot}%{tcl_sitearch}/%{oname}%{version}/libzlibstub*.a
