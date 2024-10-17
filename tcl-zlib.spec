@@ -6,7 +6,7 @@ Version:	2.0.1
 Release:	0.svn40.2
 Group:		System/Libraries
 License:	MIT
-Url:		http://svn.scheffers.net/
+Url:		https://svn.scheffers.net/
 # Snapshot of SVN40 downloaded on June 26, 2008
 # Originally found at http://svn.scheffers.net/zlib.tar.gz
 Source0:	%{oname}.tar.gz
