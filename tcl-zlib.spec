@@ -10,6 +10,11 @@ Url:		https://svn.scheffers.net/
 # Snapshot of SVN40 downloaded on June 26, 2008
 # Originally found at http://svn.scheffers.net/zlib.tar.gz
 Source0:	%{oname}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	tcl-devel
 BuildRequires:	pkgconfig(tk)
 BuildRequires:	pkgconfig(zlib)
